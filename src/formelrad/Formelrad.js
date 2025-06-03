@@ -11,10 +11,11 @@ export default function Formelrad() {
         p: ""
     })
 
-        const handleClear = (event) => {
-                event.preventDefault();
-                console.log("handleClear");
-            }
+    const handleClear = (event) => {
+        event.preventDefault();
+        console.log("handleClear");
+        setValues(values => ({...values, u:"", i:"", r:"", p:"", message: ""}))
+    }
 
     const handleSubmit = (event) => {
         event.preventDefault();
